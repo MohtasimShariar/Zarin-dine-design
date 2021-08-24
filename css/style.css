@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+}
+header{
+    background-image: url(../images/featured_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}    
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row {
+     max-width: 1180px;
+     margin: 0 auto;
+}
+.logo{ 
+     height: 120px;
+     width:auto;
+     float:left;
+     margin-top: 20px;
+
+}    
+.main-nav{
+    float:right;
+    margin-top: 40px;
+    
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px 0;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:90%;
+    font-weight: 100;
+}
+.main-nav li a:hover {
+     border-bottom: 2px solid #bf55ec;
+}
+.main-content-header{
+    width: 1180px;
+    /* border: 1px solid red; */
+    position:absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    color: #fff;
+    font-size:240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full{
+    background-color:transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+.btn-full:hover{
+    background-color:white;  
+}
+.btn-fulle{
+    background-color:transparent;
+    color: white;
+    margin-right: 15px;
+    border: 1px solid #fff;
+}
+.btn-fulle:hover{
+    background-color: #bf55ec;
+}
+
+.color-change{
+    animation: colorchange 2s infinite;
+}
+@keyframes colorchange {
+    0%{color: red;}
+    25%{color: #bf55ec;}
+    50%{color: white;}
+    100%{color: #bf55ec;}
+}
+.mobile-icon{display:none}
+
+/* responsive Quary */
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width: 100%;
+        padding:0 2%;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .row{
+        width: 100%;
+        padding:0 2%;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 788px){   
+    h1{font-size: 180%;}
+    .main-nav{display: none;}
+    .mobile-icon{display: inline-block;
+    color:white;
+    float: right;
+     margin-top: 30px;
+    margin-right: 2px;}
+
+    .main-nav{float: left}
+
+    .main-nav li{ 
+    display:block;
+    margin-top:10px}
+}
+@media only screen and (max-width: 790px){
+    h1{
+        margin-top: 50px;
+        font-size: 100%;}
+}
+
+@media only screen and (max-width: 480px){
+    .btn-full{
+        margin-bottom: 20px;
+        font-size:50%;
+        }
+        .btn-fulle{
+            margin-bottom: 20px;
+            font-size:50%;
+            }    
+    .main-nav li a{
+        font-size:50%;
+    }
+    h1{
+        
+        font-size: 60%;}
+    
+}
+@media only screen and (max-width: 300px){
+    .logo{ 
+        height: 50px;
+        width:auto;
+        float:left;
+        margin-top: 10px;
+   
+   } 
+}
+
+
